@@ -1,9 +1,9 @@
 /* basic styles */
 html {
-  font-size: 100%;
-  line-height: 1.5rem;
+  font-size: 120%;
+  line-height: 2rem;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   height: 100%;
 }
 
@@ -72,23 +72,25 @@ video {
   text-decoration: none;
   letter-spacing: 0.2rem;
   padding: 0.8rem;
-  color: #000;
+  color: teal;
 }
 
 .logo a {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2rem;
 }
 
 .nav-menu a {
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.1rem;
+  padding: 1rem;
   border-bottom: 1px solid #fff;
   transition: all ease 0.1s;
 }
 
 .nav-menu a:hover {
-  border-bottom: 1px solid #000;
+  border: 1px solid teal;
+  transform: scale(0.8);
 }
 
 /* Hero Header Navbar Changes */
@@ -102,13 +104,32 @@ video {
   z-index: 10;
 }
 
+.other-nav {
+  background-color: teal;
+}
+
+.other-nav .logo a,
+.other-nav .nav-menu a {
+  color: white;
+}
+
 .hero-nav .logo a,
 .hero-nav .nav-menu a {
   color: white;
 }
 
 .hero-nav .nav-menu a:hover {
-  border-bottom: 1px solid #ffffff;
+  border: 1px solid #ffffff;
+  transform: scale(0.8);
+}
+
+.other-nav a {
+  border: 1px solid teal;
+}
+
+.other-nav .nav-menu a:hover {
+  border: 1px solid #ffffff;
+  transform: scale(0.8);
 }
 
 .hero-nav .nav-menu a {
